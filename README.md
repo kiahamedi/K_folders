@@ -1,4 +1,4 @@
-# K_folders
+# FileFolders
 bash Script to categorize your files in folders
 
 This script is very good for categorizing your files in different folders

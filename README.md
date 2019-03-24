@@ -8,10 +8,14 @@ What the script does is to search between all the current path files to select t
 
 # usage
 To use, just download the script and treat it like a script Enough if you do not have the executable, give it the executive with the following command:
-(chmod +x K_folders.sh) 
+(chmod +x filefolders) 
 
 And run it using the following command:
-(./K_folders.sh)
+(./filefolders)
+
+# Install
+ArchLinux:</br>
+`yaourt -S gitpusher`</br>
 
 [MySite link](http://kiahamedi.ir/)
 

@@ -15,7 +15,7 @@ And run it using the following command:
 
 # Install
 ArchLinux:</br>
-`yaourt -S gitpusher`</br>
+`yaourt -S filefolders`</br>
 
 [MySite link](http://kiahamedi.ir/)
 

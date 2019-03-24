@@ -1,0 +1,40 @@
+#!/bin/bash 
+IFS=$'\n'
+
+if [ "$1" = "--help" ] ; then
+  echo "FileFolders"
+  echo "Version 1.0.0"
+  echo "bash Script to categorize your files in folders"
+  echo "source: https://github.com/kiahamedi/K_folders"
+  echo "Developer: Kia Hamedi"
+  echo "Email: kia.arta9793@gmail.com"
+  echo "  "
+  echo "Run in directory:"
+  echo "		FileFolders"
+  exit 0
+fi
+
+if [ "$1" = "-h" ] ; then
+  echo "FileFolders"
+  echo "Version 1.0.0"
+  echo "bash Script to categorize your files in folders"
+  echo "source: https://github.com/kiahamedi/K_folders"
+  echo "Developer: Kia Hamedi"
+  echo "Email: kia.arta9793@gmail.com"
+  echo "  "
+  echo "Run in directory:"
+  echo "		FileFolders"
+  exit 0
+fi
+
+clear
+echo "type your format and Enter: (.jpg/.mkv/.mp4/...)"
+read format
+files=`ls *$format`
+for i in $files; do
+    folders=$( echo "$i" | tr '.' ' ' )
+    echo "$folders" 
+    mkdir -p "$folders"
+    mv "$i" "$folders" 
+done
+
